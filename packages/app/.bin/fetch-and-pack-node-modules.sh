@@ -37,11 +37,12 @@ npm config get registry --prefix="$temp_app_dir"
 echo Fetching node_modules:
 npm ci --prefix="$temp_app_dir"
 # We need all supported achitectures of esbuild
-npm install --prefix="$temp_app_dir" esbuild --cpu x64 --os linux
-npm install --prefix="$temp_app_dir" esbuild --cpu arm64 --os linux
-npm install --prefix="$temp_app_dir" esbuild --cpu s390x --os linux
-npm install --prefix="$temp_app_dir" esbuild --cpu ppc64 --os linux
-npm install --prefix="$temp_app_dir" esbuild --cpu ia32 --os linux
+npm install --prefix="$temp_app_dir" esbuild --cpu=x64 --os=linux
+npm install --prefix="$temp_app_dir" esbuild --cpu=arm64 --os=linux
+npm install --prefix="$temp_app_dir" esbuild --cpu=s390x --os=linux
+npm install --prefix="$temp_app_dir" esbuild --cpu=ppc64 --os=linux
+npm install --prefix="$temp_app_dir" esbuild --cpu=ia32 --os=linux
+npm install --prefix="$temp_app_dir" esbuild --cpu=riscv64 --os=linux
 
 echo
 echo Packing node_modules to "$archive_path":
