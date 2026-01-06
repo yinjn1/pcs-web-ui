@@ -33,4 +33,4 @@ ${links.ui.join("\n")}
 ${uniq(links.pcs).join("\n")}
 `;
 
-fs.writeFileSync("doc/pcs-compatibility.md", docContent);
+fs.writeFileSync("docs/pcs-compatibility.md", docContent);
