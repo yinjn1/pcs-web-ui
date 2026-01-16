@@ -78,7 +78,7 @@
 AC_DEFUN([AX_PROG_DATE], [dnl
   AC_CACHE_CHECK([for GNU date], [ax_cv_prog_date_gnu], [
     ax_cv_prog_date_gnu=no
-    if date --version 2>/dev/null | head -1 | grep -q GNU
+    if date --version 2>/dev/null | head -1 | grep -Eq 'GNU|uutils'
     then
       ax_cv_prog_date_gnu=yes
     fi
