@@ -17,6 +17,7 @@ EXTRA_DIST		= \
 			  public/static/adapterCockpit.js \
 			  public/static/adapter.js \
 			  public/static/media/favicon.png \
+			  public/static/media/favicon.svg \
 			  src/app/backend/apiLib.ts \
 			  src/app/backend/api.ts \
 			  src/app/backend/calls/addConstraintRemote.ts \
